@@ -1,0 +1,133 @@
+:root {
+    --dark: #19191B;
+    --gray: #696871;
+    --purple: #5454D4;
+    --orange: #FF7149;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.UpPageHeader{
+    padding-block: 30px;
+}
+
+.UpPageHeader__container, .hero__container{
+    max-width: 1069px;
+    margin-inline: auto;
+}
+
+.UpPageHeader__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.UpPageHeader__list{
+    display: flex;
+    gap: 49px;
+}
+
+.UpPageHeader__list-link{
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: -0.47px;
+    color: var(--gray);
+    transition: color 0.3s;
+}
+
+.UpPageHeader__list-link:hover{
+    color: var(--dark);
+}
+
+.UpPageHeader__list-link.active{
+    color: var(--dark);
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 10px;
+}
+
+.UpPageHeader__button, .hero__button, .hero__button-scroll{
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: white;
+    padding: 19px 59px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.UpPageHeader__button{
+    background-color: var(--orange);
+}
+
+.UpPageHeader__button:hover, .hero__button:hover, .hero__button-scroll:hover{
+    opacity: 90%;
+}
+
+.hero{
+    padding-block: 70px;
+}
+
+.hero__container{
+    position: relative;
+}
+
+.hero__image{
+    position: absolute;
+    top: 0;
+    right: -75px;
+}
+
+
+
+.hero__title{
+    max-width: 467.24px;
+    letter-spacing: -2.5px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    line-height: 77px;
+    font-size: 80px;
+}
+
+.hero__desc{
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    max-width: 464.21px;
+    padding-bottom: 50px;
+    letter-spacing: -0.63px;
+    color: var(--gray);
+    line-height: 30px;
+}
+
+.hero__buttons{
+    display: flex;
+    gap: 36px;
+}
+
+.hero__button{
+    padding: 20px 36px;
+    background-color: #5454D4;
+}
+
+.hero__button-scroll{
+    color: var(--purple);
+    background-color: white;
+    border: solid var(--purple);
+    justify-content: center;
+    align-items: center;
+}
