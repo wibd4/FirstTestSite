@@ -1,3 +1,12 @@
+html{
+    scroll-padding: 130px;
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin-top: 100px;
+}
+
 :root {
     --dark: #19191B;
     --gray: #696871;
@@ -21,10 +30,6 @@ a{
 
 ul{
     list-style: none;
-}
-
-html{
-    scroll-behavior: smooth;
 }
 
 textarea::placeholder {
@@ -205,6 +210,13 @@ textarea::placeholder {
     gap: 82px;
 }
 
+
+.subscription__title{
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: -1.88px;
+    line-height: 70px;
+}
 .subscription__plans{
     display: grid;
     grid-template-columns: 1fr 1.14fr 1fr;
@@ -219,14 +231,51 @@ textarea::placeholder {
     text-align: center;
 }
 
-/* Активный план — модификатор того же элемента */
 .subscription__plan-active{
     background: var(--orange);
-    padding: 49px 23px; /* чуть выше, как в оригинале Figma */
+    padding: 49px 23px;
+}
+
+.subscription__plan-title{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.subscription__plan-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-block: 19px;
+    border-radius: 10px;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    margin-top: 36px;
+}
+
+.subscription__plan-price{
+    font-size: 49px;
+}
+
+.subscription__plan-features{
+    font-family: "Mulish", sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.53;
+    line-height: 30px;
+    color: var(--gray);
+}
+
+.subscription__plan-price > span{
+    font-size: 30px;
 }
 
 .subscription__plan-active .subscription__plan-title{
     color: rgba(255,255,255,0.7);
+}
+
+.subscription__plan-price{
+    margin-bottom: 10px;
 }
 
 .subscription__plan-active .subscription__plan-price,
